@@ -12,4 +12,31 @@ public class Drink {
         this.decoration = decoration;
         this.volume = volume;
     }
+
+    static class MilkTeaBuilder implements DrinkBuilder{
+        private String milk;
+        private boolean caneSugar;
+        private boolean decoration;
+        private int volume;
+
+        public DrinkBuilder milk(String milk){
+            this.milk = milk;
+            return this;
+        }
+
+        public DrinkBuilder caneSugar(boolean caneSugar){
+            this.caneSugar = caneSugar;
+            return this;
+        }
+
+        public DrinkBuilder decoration(boolean decoration){
+            this.decoration = decoration;
+            return this;
+        }
+
+        public DrinkBuilder volume(int volume){
+            this.volume = volume;
+            return this;
+        }
+    }
 }
