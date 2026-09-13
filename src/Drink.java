@@ -13,6 +13,10 @@ public class Drink {
         this.volume = volume;
     }
 
+    public String toString(){
+        return type + "," + volume + "," + milk + "," + caneSugar + "," + decoration;
+    }
+
     static class MilkTeaBuilder implements DrinkBuilder{
         private String milk = "Classic";
         private boolean caneSugar;
