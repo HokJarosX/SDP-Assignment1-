@@ -14,10 +14,10 @@ public class Drink {
     }
 
     static class MilkTeaBuilder implements DrinkBuilder{
-        private String milk;
+        private String milk = "Classic";
         private boolean caneSugar;
         private boolean decoration;
-        private int volume;
+        private int volume = 300;
 
         public DrinkBuilder milk(String milk){
             this.milk = milk;
@@ -39,16 +39,16 @@ public class Drink {
             return this;
         }
 
-        public Drink built(){
+        public Drink build(){
             return new Drink("MilkTea", milk, caneSugar, decoration, volume);
         }
     }
 
     static class CoffeBuilder implements DrinkBuilder{
-        private String milk;
+        private String milk = "Classic";
         private boolean caneSugar;
         private boolean decoration;
-        private int volume;
+        private int volume = 300;
 
         public DrinkBuilder milk(String milk){
             this.milk = milk;
@@ -70,7 +70,7 @@ public class Drink {
             return this;
         }
 
-        public Drink built(){
+        public Drink build(){
             return new Drink("Коффе", milk, caneSugar, decoration, volume);
         }
     }
