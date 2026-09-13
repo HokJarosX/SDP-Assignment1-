@@ -38,6 +38,10 @@ public class Drink {
             this.volume = volume;
             return this;
         }
+
+        public Drink built(){
+            return new Drink("MilkTea", milk, caneSugar, decoration, volume);
+        }
     }
 
     static class CoffeBuilder implements DrinkBuilder{
@@ -64,6 +68,10 @@ public class Drink {
         public DrinkBuilder volume(int volume){
             this.volume = volume;
             return this;
+        }
+
+        public Drink built(){
+            return new Drink("Коффе", milk, caneSugar, decoration, volume);
         }
     }
 
