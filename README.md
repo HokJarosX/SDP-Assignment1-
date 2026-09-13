@@ -1,1 +1,2 @@
 # SDP-Assignment1-
+I created a coffee shop order model (offering a choice of coffee or tea with optional add-ons) using the Builder pattern because the order can contain multiple optional components and should be constructed step by step. The pattern makes the construction process more readable and flexible, while allowing different builders to create meaningfully different order representations. 
